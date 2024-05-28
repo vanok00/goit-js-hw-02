@@ -8,8 +8,9 @@ function getShippingCost(country) {
             return 'Shipping to Australia will cost 170 credits'
         case `Jamaica`:
             return 'Shipping to Jamaica will cost 120 credits'
-        default:
-            'Sorry, there is no delivery to your country'
+        default: {
+            return 'Sorry, there is no delivery to your country'
+        }
     }
 }
 
